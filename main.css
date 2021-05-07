@@ -5,7 +5,7 @@
 }
 
 body{
-    background: #00BBD5;
+    background-image: linear-gradient(to right top, #5781be, #4f78ca, #536dd2, #625ed7, #784bd7);
 }
 .jumbotron-image p,h1{
     font-family: 'Pacifico', cursive;

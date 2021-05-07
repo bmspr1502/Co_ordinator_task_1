@@ -83,6 +83,7 @@ session_start();
     <div class="row">
         <div class="col mt-3">
             <div class="card text-light p-4 " id="kite_container">
+                <h2>Kite Flying</h2>
             <div class="kite"> 
                 <div class="tail"></div>
             </div>
