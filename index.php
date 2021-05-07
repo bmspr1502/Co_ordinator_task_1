@@ -24,7 +24,7 @@ session_start();
 <div class="jumbotron text-white jumbotron-image shadow" id="top" >
     <nav class="navbar navbar-expand-md navbar-dark">
 <a class="navbar-brand btn btn-dark btn-lg" href="#" ><h1>BMS</h1></a>
-<a class="navbar-brand ml-auto btn btn-dark btn-lg" href="shop.php" ><h1>MilkShakes</h1></a>
+<a class="navbar-brand ml-auto btn btn-dark btn-lg" href="menu.php" ><h1>MilkShakes</h1></a>
 </nav>
     <!--nav class="navbar navbar-expand-md navbar-dark">
 
