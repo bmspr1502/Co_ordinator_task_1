@@ -51,3 +51,7 @@ body{
 #gallery > img:hover {
 	transform: scale(1.1);
 }
+
+#cart_items{
+    background: #006D50;
+}

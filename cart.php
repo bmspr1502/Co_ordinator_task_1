@@ -5,7 +5,7 @@ if(isset($_SESSION['userid'])){
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Cart: Hotel Muruga Bhavan</title>
+    <title>Cart: Pranav Milkshakes</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -19,13 +19,13 @@ if(isset($_SESSION['userid'])){
 
 </head>
 
-<body style="background: #FF9671">
+<body>
 <div class="container-fluid p-0">
 <header>
     <div class="jumbotron text-white jumbotron-image shadow" >
         <nav class="navbar navbar-expand-md navbar-dark">
 
-            <a class="navbar-brand btn btn-dark btn-lg" href="index.php" ><h1>HMB</h1></a>
+            <a class="navbar-brand btn btn-dark btn-lg" href="index.php" ><h1>PMS</h1></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -69,30 +69,35 @@ if(isset($_SESSION['userid'])){
         </nav>
 
         <h1 class="display-3 text-center" id="hmb">
-            Cart - Hotel Muruga Bhavan
+            Cart - Pranav Milkshakes
         </h1>
         <p class="push-spaces"></p>
     </div>
 </header>
 
 <div class="container">
-    <h2 class="text-center">Cart Items</h2>
-    <p>Hey <?php echo $_SESSION['username'];?>, here's your cart.</p><br>
-    <div id="cart" class="text-white text-center bg-success"></div>
-    <div id="data">
+    <div class='card text-light p-4' id="cart_items">
+        <h2 class="text-center">Cart Items</h2>
+        <p>Hey <?php echo $_SESSION['username'];?>, here's your cart.</p><br>
+        <div id="cart" class="text-white text-center bg-success"></div>
+        <div id="data">
+        </div>
     </div>
+
+    <div class='card text-light p-4 mt-4' id='demo'>
     <h2 class="text-center">Previous Transactions</h2>
     <div id="txns">
+    </div>
     </div>
 </div>
 <footer class="mt-4">
     <div class="jumbotron text-center bg-dark text-light" style="margin-bottom:0" id="contact-us">
         <div class="row">
             <div class="col-lg-6">
-                <h3>Hotel Muruga Bhavan</h3>
+                <h3>Pranav Milkshakes</h3>
                 <p>35, Adyar Main Road,<br>Madhya Kailash, <br> Chennai.<br><br>
-                    <span class="material-icons" style="font-size: 16px;">call</span> <a href="callto:+919432112345" >+91 94321 12345</a><br>
-                    <span class="material-icons" style="font-size: 16px;">email</span><a href="mailto: hmb@email.com" >hmb@email.com</a><br>
+                <span class="material-icons" style="font-size: 16px;">call</span> <a href="callto:+919443501317" >+91 94435 01317</a><br>
+                <span class="material-icons" style="font-size: 16px;">email</span><a href="mailto: bmspr1502@gmail.com" >bmspr1502@gmail.com</a><br>
                 </p>
             </div>
             <div class="col-lg-6">

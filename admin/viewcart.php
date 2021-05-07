@@ -17,7 +17,8 @@ if($result->num_rows > 0){
             <th>USERID</th>
             <th>FOODID</th>
             <th>NAME</th>
-            <th>Price</th>
+            <th>Price(w/o tax)</th>
+            <th>Price(w/tax)</th>
             <th>Delete</th>
         </tr>
         </thead>
@@ -31,6 +32,7 @@ if($result->num_rows > 0){
                 <td><?php echo $row['userid'];?></td>
                 <td><?php echo $row['foodid'];?></td>
                 <td><?php echo $row['name'];?></td>
+                <td><?php echo $row['beforetax'];?></td>
                 <td><?php echo $row['price'];?></td>
                 <td><button class="btn btn-danger" onclick="deleteData(<?php echo $row['txnid'];?>)">Delete Item</button> </td>
             </tr>
