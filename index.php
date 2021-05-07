@@ -82,30 +82,11 @@ session_start();
 <div class="container" style="margin-top:30px">
     <div class="row">
         <div class="col mt-3">
-            <div class="card text-light p-4 " id="kite_container">
-                <h2>Kite Flying</h2>
+            <h2 class='text-center text-white'>Kite Flying</h2>
+            <div class="card text-light p-4 " id="kite_container">     
             <div class="kite"> 
                 <div class="tail"></div>
             </div>
-                <!--h2>LEGACY</h2>
-
-                <p>Four decades ago, a small sweet shop was started by Late K.S. Palani Raja, in the metropolis of Chennai. This same shop has now flowered into multiple branches that dot the length and breadth of Chennai as well as its neighbouring cities.
-
-                    <br>M/s. Hotel Muruga Bhavan is now a well-established brand in Southern India that continues to grow with a vision to capture the global market. The baton of this sweet legacy was passed on by K.S. Palani Raja to his sons, Mr. K.P. Murugan and Mr. K.P. Shanmughan who now act as the driving force behind HMB.</p>
-                <p>We at HMB follow the perfect formula for success. Delicious food prepared under extremely hygienic conditions, served in a clean environment with a lot of passion and the reasonable pricing is the perfect answer to our gourmet, budget conscious customer.<br>
-                    A menu of over 350 dishes in 10 categories, prepared to exacting standards and serving 100,000  customers across all the outlets, is a testimony to the impeccable quality and taste that our Hote Muruga Bhavan is famous for.</p>
-            </div>
-        </div>
-        <div class="col-md-6 mt-3">
-            <div class="card text-light p-4" style="background:#845EC2">
-                <h2>A NETWORK OF SUCCESS</h2>
-
-                <p>
-                    The Indian Cuisine is as diverse as its culture, languages, regions and its climate. Every major region of India brings its own unique dishes and subtle variations to popular dishes. <br>Aromatic Spices are the essence of Indian cuisine.<br>
-                    This is the unique formula, we at Hotel Muruga Bhavan, chain of Indian vegetarian restaurants follow, to build our businesses across the globe.</p>
-                <p>We ensure our customers are our strength and make them feel at home when they are with us. An outlet to be great with friends or all by yourself.<br>
-                    You can eat in, take it to go, or have it catered right to you. The feeling is friendly and the food is fabulous.<br> Whenever you need it, wherever you need it, it is your own unique world to eat out.<br>
-                    Our services include Fast Food, Take Away, Home Delivery, Outdoor Catering, Party Orders and more.</p-->
             </div>
         </div>
     </div>
@@ -113,10 +94,59 @@ session_start();
 </div>
 
 
-<div class="container text-center text-light p-2" style="background: #008B74">
+<div class="container text-center text-light p-2" >
     <h2>Gallery</h2>
-    <div class="text-center">
-        <div id="demo" class="container mx-auto carousel slide mt-2 p-2" data-ride="carousel">
+    <div class="text-center" id='gallery'>
+    <!--div class="row">
+        <div class="col">
+            <img src="wedding.jpg">
+            <img src="rocks.jpg">
+            <img src="falls2.jpg">
+            <img src="paris.jpg">
+            <img src="nature.jpg">
+            <img src="mist.jpg">
+            <img src="paris.jpg">
+        </div>
+        <div class="col">
+            <img src="underwater.jpg">
+            <img src="ocean.jpg">
+            <img src="wedding.jpg">
+            <img src="mountainskies.jpg">
+            <img src="rocks.jpg">
+            <img src="underwater.jpg">
+        </div>
+        <div class="col">
+            <img src="wedding.jpg">
+            <img src="rocks.jpg">
+            <img src="falls2.jpg">
+            <img src="paris.jpg">
+            <img src="nature.jpg">
+            <img src="mist.jpg">
+            <img src="paris.jpg">
+        </div>
+        <div class="column">
+            <img src="underwater.jpg">
+            <img src="ocean.jpg">
+            <img src="wedding.jpg">
+            <img src="mountainskies.jpg">
+            <img src="rocks.jpg">
+            <img src="underwater.jpg">
+        </div>
+    </div-->
+
+    <div class='row'>
+        <div class='col-lg-3 col-md-4 col-sm-6 mt-3'>
+            <img class='img-fluid rounded' src='img/chappathi.jpg'>
+        </div>
+        <div class='col-lg-3 col-md-4 col-sm-6 mt-3'>
+        <img class='img-fluid rounded' src='img/chappathi.jpg'>
+        </div>
+        <div class='col-lg-3 col-md-4 col-sm-6 mt-3'>
+        <img class='img-fluid rounded' src='img/chappathi.jpg'>
+        </div>
+    </div>
+
+        <!--div id="demo" class="container mx-auto carousel slide mt-2 p-2" data-ride="carousel">
 
             <ul class="carousel-indicators">
                 <li data-target="#demo" data-slide-to="0" class="active"></li>
@@ -151,7 +181,7 @@ session_start();
                 <span class="carousel-control-next-icon"></span>
             </a>
 
-        </div>
+        </div-->
     </div>
 </div>
 <footer class="mt-4">
