@@ -14,7 +14,6 @@ session_start();
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
-    <link href="logo.jpg" rel="icon">
     <link rel="stylesheet" href="kite.css">
 
 </head>
@@ -97,81 +96,30 @@ session_start();
 <div class="container text-center text-light p-2" >
     <h2>Gallery</h2>
     <div class="text-center" id='gallery'>
-    <!--div class="row">
-        <div class="col">
-            <img src="wedding.jpg">
-            <img src="rocks.jpg">
-            <img src="falls2.jpg">
-            <img src="paris.jpg">
-            <img src="nature.jpg">
-            <img src="mist.jpg">
-            <img src="paris.jpg">
-        </div>
-        <div class="col">
-            <img src="underwater.jpg">
-            <img src="ocean.jpg">
-            <img src="wedding.jpg">
-            <img src="mountainskies.jpg">
-            <img src="rocks.jpg">
-            <img src="underwater.jpg">
-        </div>
-        <div class="col">
-            <img src="wedding.jpg">
-            <img src="rocks.jpg">
-            <img src="falls2.jpg">
-            <img src="paris.jpg">
-            <img src="nature.jpg">
-            <img src="mist.jpg">
-            <img src="paris.jpg">
-        </div>
-        <div class="column">
-            <img src="underwater.jpg">
-            <img src="ocean.jpg">
-            <img src="wedding.jpg">
-            <img src="mountainskies.jpg">
-            <img src="rocks.jpg">
-            <img src="underwater.jpg">
-        </div>
-    </div-->
 
-    <div class='row'>
-        <div class='col-lg-3 col-md-4 col-sm-6 mt-3'>
-            <img class='img-fluid rounded' src='img/chappathi.jpg'>
-        </div>
-        <div class='col-lg-3 col-md-4 col-sm-6 mt-3'>
-        <img class='img-fluid rounded' src='img/chappathi.jpg'>
-        </div>
-        <div class='col-lg-3 col-md-4 col-sm-6 mt-3'>
-        <img class='img-fluid rounded' src='img/chappathi.jpg'>
-        </div>
-    </div>
-
-        <!--div id="demo" class="container mx-auto carousel slide mt-2 p-2" data-ride="carousel">
+        <div id="demo" class="container mx-auto carousel slide mt-2 p-2" data-ride="carousel">
 
             <ul class="carousel-indicators">
                 <li data-target="#demo" data-slide-to="0" class="active"></li>
                 <li data-target="#demo" data-slide-to="1"></li>
                 <li data-target="#demo" data-slide-to="2"></li>
                 <li data-target="#demo" data-slide-to="3"></li>
-                <li data-target="#demo" data-slide-to="4"></li>
             </ul>
 
             <div class="carousel-inner mx-auto">
                 <div class="carousel-item active">
-                    <img class="img-fluid" src="idli.jpg" alt=Idli">
+                    <img class="img-fluid rounded img_click" src="https://static.pexels.com/photos/52500/horse-herd-fog-nature-52500.jpeg" alt="Horse">
                 </div>
                 <div class="carousel-item">
-                    <img class="img-fluid" src="dosa.jpg" alt="Dosa">
+                    <img class="img-fluid rounded img_click" src="https://static.pexels.com/photos/66898/elephant-cub-tsavo-kenya-66898.jpeg" alt="Elephant">
                 </div>
                 <div class="carousel-item">
-                    <img class="img-fluid" src="meals.jpg" alt="Meals">
+                    <img class="img-fluid rounded img_click" src="https://static.pexels.com/photos/158471/ibis-bird-red-animals-158471.jpeg" alt="Bird">
                 </div>
                 <div class="carousel-item">
-                    <img class="img-fluid" src="pongal.jpg" alt="Pongal">
+                    <img class="img-fluid rounded img_click" src="https://static.pexels.com/photos/50988/ape-berber-monkeys-mammal-affchen-50988.jpeg" alt="Monkeys">
                 </div>
-                <div class="carousel-item">
-                    <img class="img-fluid" src="chappathi.jpg" alt="Chappathi">
-                </div>
+                
             </div>
 
             <a class="carousel-control-prev" href="#demo" data-slide="prev">
@@ -181,21 +129,60 @@ session_start();
                 <span class="carousel-control-next-icon"></span>
             </a>
 
-        </div-->
+        </div>
+
+        <div class='row'>
+            <div class='col-lg-3 col-md-4 col-sm-6 mt-3 p-1'>
+                <img class='img-fluid rounded img_click' src='img/chappathi.jpg'>
+            </div>
+            <div class='col-lg-3 col-md-4 col-sm-6 mt-3 p-1 '>
+                <img class='img-fluid rounded img_click' src='img/dosa.jpg'>
+            </div>
+            <div class='col-lg-3 col-md-4 col-sm-6 mt-3 p-1'>
+                <img class='img-fluid rounded img_click' src='img/pongal.jpg'>
+            </div>
+            <div class='col-lg-3 col-md-4 col-sm-6 mt-3 p-1 '>
+                <img class='img-fluid rounded img_click' src='img/meals.jpg'>
+            </div>
+        </div >
     </div>
 </div>
+
+<div class="modal" id="myModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">View Image</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+            <img id='modalImg' width='100%' class='img-fluid rounded'>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
 <footer class="mt-4">
 <div class="jumbotron text-center bg-dark text-light" style="margin-bottom:0" id="contact-us">
     <div class="row">
-        <div class="col-lg-6">
-            <h3>Hotel Muruga Bhavan</h3>
-            <p>35, Adyar Main Road,<br>Madhya Kailash, <br> Chennai.<br><br>
-                <span class="material-icons" style="font-size: 16px;">call</span> <a href="callto:+919432112345" >+91 94321 12345</a><br>
-                <span class="material-icons" style="font-size: 16px;">email</span><a href="mailto: hmb@email.com" >hmb@email.com</a><br>
+        <div class="col">
+            <h3>Pranava Raman BMS</h3>
+            <p>2019103555, <br>B.E., CSE (2nd year).<br><br>
+                <span class="material-icons" style="font-size: 16px;">call</span> <a href="callto:+919443501317" >+91 94435 01317</a><br>
+                <span class="material-icons" style="font-size: 16px;">email</span><a href="mailto: bmspr1502@gmail.com" >bmspr1502@gmail.com</a><br>
+
             </p>
-        </div>
-        <div class="col-lg-6">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3887.478094832939!2d80.24905!3d13.005198000000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x16f41d10f57949e9!2sKasthurba%20Nagar!5e0!3m2!1sen!2sus!4v1613743064308!5m2!1sen!2sus" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
     </div>
 </div>
@@ -203,6 +190,17 @@ session_start();
     <button onclick="topFunction()" id="myBtn" class="btn btn-danger"  title="Go to top"><i class="fa fa-arrow-up"></i> </button>
 
 </div>
+<script>
+    
+$(document).ready(function() {
+    $(".img_click").click(function(){
+        var src = $(this).attr('src');
+        $("#myModal").modal();
+        $("#modalImg").attr("src", src);
+
+    })
+});
+</script>
 <script src="main.js">
 </script>
 </body>

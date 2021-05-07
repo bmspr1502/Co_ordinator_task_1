@@ -11,7 +11,7 @@ body{
     font-family: 'Pacifico', cursive;
 }
 .jumbotron-image{
-    background: url("final1.jpg");
+    background: url("img/bg_1.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -40,7 +40,14 @@ body{
     border: none;
     padding: 15px;
 }
-/*
-#gallery{
+
+#demo{
+    background: #5D3FB9;
 }
-*/
+#gallery > img{
+    transition: all 1s;
+}
+
+#gallery > img:hover {
+	transform: scale(1.1);
+}
