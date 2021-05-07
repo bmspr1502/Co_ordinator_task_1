@@ -8,7 +8,8 @@ $result = $con->query($query);
 
 if($result->num_rows > 0){
 
-    $sum = 0;
+    $sum_price = 0;
+    $sum_tax = 0;
     ?>
     <table class="table table-dark table-striped table-hover">
         <thead>
@@ -25,7 +26,8 @@ if($result->num_rows > 0){
         <tbody>
         <?php
         while($row = $result->fetch_assoc()){
-            $sum+=$row['price'];
+            $sum_price += $row['beforetax'];
+            $sum_tax+=$row['price'];
             ?>
             <tr>
                 <td><?php echo $row['txnid'];?></td>
@@ -41,7 +43,9 @@ if($result->num_rows > 0){
         ?>
         </tbody>
     </table>
-    <button type="button" id="payNowBtn" class="btn btn-success" onclick="paynow()"> Pay Rs.<?php echo $sum; ?></button>
+    <p>The Items cost you <b>Rs. <?php echo $sum_price; ?></b> <br>
+    After a tax of 5% on all products, the total cost is: <b>Rs. <?php echo $sum_tax; ?></b></p>
+    <button type="button" id="payNowBtn" class="btn btn-success" onclick="paynow()"> Pay Rs.<?php echo $sum_tax; ?></button>
     <?php
 }
 else{

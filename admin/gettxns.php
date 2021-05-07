@@ -16,7 +16,7 @@ if(isset($_POST['userid'])){
                 <th>USERID</th>
                 <th>FOODID</th>
                 <th>NAME</th>
-                <th>Price</th>
+                <th>Price Paid</th>
             </tr>
             </thead>
             <tbody>

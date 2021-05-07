@@ -87,8 +87,8 @@ if(isset($_SESSION['userid'])){
             <div class="col-lg-6">
                 <h3>Pranav Milkshakes</h3>
                 <p>35, Adyar Main Road,<br>Madhya Kailash, <br> Chennai.<br><br>
-                    <span class="material-icons" style="font-size: 16px;">call</span> <a href="callto:+919432112345" >+91 94321 12345</a><br>
-                    <span class="material-icons" style="font-size: 16px;">email</span><a href="mailto: hmb@email.com" >hmb@email.com</a><br>
+                <span class="material-icons" style="font-size: 16px;">call</span> <a href="callto:+919443501317" >+91 94435 01317</a><br>
+                <span class="material-icons" style="font-size: 16px;">email</span><a href="mailto: bmspr1502@gmail.com" >bmspr1502@gmail.com</a><br>
                 </p>
             </div>
             <div class="col-lg-6">
